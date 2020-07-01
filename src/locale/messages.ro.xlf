@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="41aac9cecddc9f345c263d3742192e68e227e413" datatype="html">
+        <source>Menu</source>
+        <target>Meniu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p1" datatype="html">
+        <source>Product List</source>
+           <target>Lista de produse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">306</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/productsoperations/productsoperations.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">The list of products from backend appc</note>
+        <note priority="1" from="meaning">Product List</note>
+      </trans-unit>
+      <trans-unit id="p2" datatype="html">
+        <source>Home</source>
+           <target>Acasa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <note priority="1" from="description"> The first page of the project appc</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="p3" datatype="html">
+        <source>Register</source>
+           <target>Inregistrare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">308</context>
+        </context-group>
+        <note priority="1" from="description"> Register for the customers appc</note>
+        <note priority="1" from="meaning">The rigister</note>
+      </trans-unit>
+      <trans-unit id="p4" datatype="html">
+        <source>Welcome to our online shop!</source>
+           <target>Buna venit la magazinul nostru online!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">318</context>
+        </context-group>
+        <note priority="1" from="description">The title of the first page appc</note>
+        <note priority="1" from="meaning">Title</note>
+      </trans-unit>
+      <trans-unit id="p5" datatype="html">
+        <source>Products</source>
+           <target>Produse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">326</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+        <note priority="1" from="description"> All the products from backend appc</note>
+        <note priority="1" from="meaning">Products</note>
+      </trans-unit>
+      <trans-unit id="ed1" datatype="html">
+        <source>Product Edite</source>
+           <target>Editarea produsului</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-edit/product-edit.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The page where you can edit the product prod</note>
+        <note priority="1" from="meaning">Edit Page</note>
+      </trans-unit>
+      <trans-unit id="ed2" datatype="html">
+        <source> Update Product!</source>
+           <target>Editare Produs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-edit/product-edit.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The button that made the update of the product prod</note>
+        <note priority="1" from="meaning">The update button</note>
+      </trans-unit>
+      <trans-unit id="dp1" datatype="html">
+        <source> Product: <x id="INTERPOLATION" equiv-text="{{dataFromBakend.name}}"/></source>
+           <target>Produs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The name of the product detail prod</note>
+        <note priority="1" from="meaning">Product Name</note>
+      </trans-unit>
+      <trans-unit id="dp2" datatype="html">
+        <source> Name: <x id="INTERPOLATION" equiv-text="{{dataFromBakend.name}}"/></source>
+           <target>Nume</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Name of the product prod</note>
+        <note priority="1" from="meaning">ProductName</note>
+      </trans-unit>
+      <trans-unit id="dp3" datatype="html">
+        <source> Category: <x id="INTERPOLATION" equiv-text="{{dataFromBakend.category}}"/> RON</source>
+           <target>Categorie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Category of the product prod</note>
+        <note priority="1" from="meaning">ProductCategory</note>
+      </trans-unit>
+      <trans-unit id="dp4" datatype="html">
+        <source>Price: <x id="INTERPOLATION" equiv-text="{{dataFromBakend.price}}"/></source>
+           <target>Pret</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">The price of the product prod</note>
+        <note priority="1" from="meaning">ProductPrice</note>
+      </trans-unit>
+      <trans-unit id="dp5" datatype="html">
+        <source>Description: <x id="INTERPOLATION" equiv-text="{{dataFromBakend.description}}"/></source>
+           <target>Descriere</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The description of the prod</note>
+        <note priority="1" from="meaning">ProdcutDescription</note>
+      </trans-unit>
+      <trans-unit id="dp6" datatype="html">
+        <source>ADD</source>
+           <target>Adaugare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Adding a new product prod</note>
+        <note priority="1" from="meaning">Add button</note>
+      </trans-unit>
+      <trans-unit id="dp7" datatype="html">
+        <source>EDIT</source>
+           <target>Editare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Making editation of one product prod</note>
+        <note priority="1" from="meaning">Edit button</note>
+      </trans-unit>
+      <trans-unit id="dp8" datatype="html">
+        <source>DELETE</source>
+           <target>Stergere</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Deleting a product from the online shop prod</note>
+        <note priority="1" from="meaning">Delete button</note>
+      </trans-unit>
+      <trans-unit id="pc1" datatype="html">
+        <source> Category</source>
+           <target>Categorie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product/product.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The category of the product pcat</note>
+        <note priority="1" from="meaning">ProductCategory</note>
+      </trans-unit>
+      <trans-unit id="pc2" datatype="html">
+        <source>Product Name</source>
+           <target>Numele Produsului</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product/product.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">The name of the product pcat</note>
+        <note priority="1" from="meaning">ProductName</note>
+      </trans-unit>
+      <trans-unit id="pc3" datatype="html">
+        <source> Price</source>
+           <target>Pret</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product/product.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">The price of the product pcat</note>
+        <note priority="1" from="meaning">Product Price</note>
+      </trans-unit>
+      <trans-unit id="pc4" datatype="html">
+        <source>Product Detail</source>
+           <target>Detalii Produs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product/product.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/product/product.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">The description of the product pcat</note>
+        <note priority="1" from="meaning">ProductDetail</note>
+      </trans-unit>
+      <trans-unit id="c8eee68bfd7fef968444ac9129b75b41fd583539" datatype="html">
+        <source>Login</source>
+           <target>Autentificare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description"> The button that connects the customer to the application app@con1</note>
+        <note priority="1" from="meaning">Login button</note>
+      </trans-unit>
+      <trans-unit id="51f611a16591851ecca69150112967abc6cf4072" datatype="html">
+        <source>
+            <x id="INTERPOLATION" equiv-text="{{hide ? &apos;visibility&apos; : &apos;visibility_off&apos;}}"/>
+          </source>
+<target>Parola</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">The password of the customer app@con3</note>
+        <note priority="1" from="meaning">Password</note>
+      </trans-unit>
+      <trans-unit id="1e075a7898bc0c161e29d02cfa74d1139c126b6d" datatype="html">
+        <source>Login
+          </source>
+             <target>Autentificare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
+        <source>Register</source>
+           <target>Inregistrare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c3" datatype="html">
+        <source>
+            <x id="INTERPOLATION" equiv-text="{{hide ? &apos;visibility&apos; : &apos;visibility_off&apos;}}"/>
+          </source>
+          <target>Parola</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description"> The password of the customer cust</note>
+        <note priority="1" from="meaning">Password</note>
+      </trans-unit>
+      <trans-unit id="c4" datatype="html">
+        <source>Register
+          </source>
+             <target>Inregistrare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description"> The button that makes the registration of the customer cust</note>
+        <note priority="1" from="meaning">Button Registration</note>
+      </trans-unit>
+      <trans-unit id="c5" datatype="html">
+        <source>Login</source>
+           <target>Autentificare</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description"> The button that logged the customer cust</note>
+        <note priority="1" from="meaning">Login</note>
+      </trans-unit>
+      <trans-unit id="o1" datatype="html">
+        <source>Order</source>
+           <target>Comanda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The title of the page ord</note>
+        <note priority="1" from="meaning">OrderPage</note>
+      </trans-unit>
+      <trans-unit id="o7" datatype="html">
+        <source>Female</source>
+           <target>Feminin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description"> The gender of the person that&apos;s logged in ord</note>
+        <note priority="1" from="meaning">Female</note>
+      </trans-unit>
+      <trans-unit id="o8" datatype="html">
+        <source>Male</source>
+           <target>Masculin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description"> The gender of the person that&apos;s logged in ord</note>
+        <note priority="1" from="meaning">Male</note>
+      </trans-unit>
+      <trans-unit id="o9" datatype="html">
+        <source>
+      <x id="START_TAG_MAT-OPTION" ctype="x-mat-option" equiv-text="&lt;mat-option&gt;"/>VISA<x id="CLOSE_TAG_MAT-OPTION" ctype="x-mat-option" equiv-text="&lt;/mat-option&gt;"/>
+      <x id="START_TAG_MAT-OPTION" ctype="x-mat-option" equiv-text="&lt;mat-option&gt;"/>MasterCard<x id="CLOSE_TAG_MAT-OPTION" ctype="x-mat-option" equiv-text="&lt;/mat-option&gt;"/>
+    </source>
+       <target>Metoda de plata</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">The method of the payment ord</note>
+        <note priority="1" from="meaning">Payment</note>
+      </trans-unit>
+      <trans-unit id="o10" datatype="html">
+        <source>Submit Order!</source>
+           <target>Trimite comanda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description"> The button that places the order ord</note>
+        <note priority="1" from="meaning">The submitting button</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

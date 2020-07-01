@@ -1,0 +1,58 @@
+<div style="display: flex">
+  <table mat-table [dataSource]="allProducts" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+
+    <ng-container matColumnDef="no">
+      <th mat-header-cell *matHeaderCellDef i18n="ProductCategory|The category of the product pcat@@pc1"> Category</th>
+      <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef i18n="ProductName|The name of the product pcat@@pc2">Product Name</th>
+      <td mat-cell *matCellDef="let element" href="#"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef i18n="Product Price|The price of the product pcat@@pc3"> Price</th>
+      <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list class="mat-chip-list-stacked" (click)="onLoad(element)" style="color: #1976d2">
+          <h3>
+            <button mat-button i18n="ProductDetail|The description of the product pcat@@pc4">Product Detail</button>
+          </h3>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="buttons">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element" (click)="onAddCart(element)">
+        <button [disabled]="counter < 1" mat-button style="color: #1976d2" i18n="Add button|The button for adding a product into a shop cart pcat@@pc4">Add</button>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <div>
+  <i class="material-icons" (click)="openCart()" #cart style="color: blue">
+    shopping_cart
+  </i>
+    <div class="position-shopping-cart">
+      {{cartItemCount | async }}
+    </div>
+  </div>
+</div>
+<div>
+</div>
+

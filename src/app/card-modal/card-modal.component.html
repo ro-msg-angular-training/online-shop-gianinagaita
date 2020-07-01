@@ -1,0 +1,74 @@
+<ion-content fullscreen class="container-fluid mb-5">
+
+  <div class="ion-text-end">
+    <ion-button  fill="clear" color="dark">
+      <ion-icon name="close" slot="start"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="ion-padding">
+
+    <ion-list>
+      <ion-item *ngFor="let p of cart" class="ion-text-wrap">
+        <ion-grid>
+          <ion-row class="ion-align-items-center">
+            <ion-col size="2" class="ion-align-self-center">
+              <ion-button color="medium" fill="clear" (click)="removeCartItem(p)">
+                <ion-icon name="remove-circle" slot="icon-only"></ion-icon>
+               X
+              </ion-button>
+            </ion-col>
+
+            <ion-col size="1" class="ion-align-self-center">
+              {{p.quantity}}
+            </ion-col>
+
+            <ion-col size="2" class="ion-align-self-center">
+              <ion-button color="medium" fill="clear" (click)="increaseCartItem(p)">
+                <ion-icon name="add-circle" slot="icon-only"></ion-icon>
+                +
+              </ion-button>
+            </ion-col>
+
+            <ion-col size="2" offset="5">
+              <ion-button color="medium" fill="clear" (click)="decreaseCartItem(p)">
+                <ion-icon name="close-circle" slot="icon-only"></ion-icon>
+                -
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="9">
+              <b>{{ p.product.name }}</b>
+              <br>
+            </ion-col>
+            <ion-col size="9">
+              <b>{{ p.product.price | currency:'USD' }}</b>
+              <br>
+            </ion-col>
+            <ion-col size="3" class="ion-text-end">
+             <b style="color: black"> {{ getTotal(p.product.price, p.quantity) | currency:'USD'}}  </b>
+              <br>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-col size="9">
+
+        </ion-col>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="9">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+<br>
+    <button mat-button class="btn btn-danger" style="background: #1976d2" (click)="checkOut()">
+      Checkout
+    </button>
+  </div>
+
+</ion-content>

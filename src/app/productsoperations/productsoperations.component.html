@@ -1,0 +1,31 @@
+<div class="container-fluid mb-5" >
+<form [formGroup]="productService.formGroup" class="normal-form" (ngSubmit)="onSubmit()">
+  <mat-grid-list cols="2" rowHeight="300px">
+      <div class="controles-container">
+        <input type="hidden" formControlName="$key">
+<mat-form-field>
+<!--  i put the * at the end of the placeholder name, because i put this to be required into form control service.-->
+  <input formControlName="name" matInput placeholder="Product Name*" >
+  <mat-error *ngIf="productService.formGroup.controls['name'].errors?.required" >This field is mandatory.</mat-error>
+</mat-form-field>
+        <mat-form-field>
+          <input formControlName="category" matInput placeholder="Product Category*" >
+          <mat-error *ngIf="productService.formGroup.controls['category'].errors?.required">This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+<!--          if i put a letter it s gonna made a red color and if i want to enterd 8 or > numbers, it wan t let me to do that.-->
+          <input type="text" pattern="[0-9]*" maxlength="7" formControlName="price" matInput placeholder="Product Price*">
+          <mat-error *ngIf="productService.formGroup.controls['price'].errors?.required">This field is mandatory.</mat-error>
+
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="description" matInput placeholder="Product Description">
+        </mat-form-field>
+      </div>
+    <div class="buttom-size">
+      <button mat-raised-button style="background: #1976d2" type="submit" class="submit-button" formControlName="sumbit" (click)="onNoClick()"matInput [disabled]="productService.formGroup.invalid" i18n="Submit Button|The button for adding a new product in application add@@p1">Submit!</button>
+    </div>
+  </mat-grid-list>
+</form>
+</div>
+

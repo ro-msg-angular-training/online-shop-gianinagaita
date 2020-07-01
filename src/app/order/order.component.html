@@ -1,0 +1,56 @@
+<div class="medium-list">
+  <div class="list-viewer-wrapper">
+    <div class="list-header-title" i18n="OrderPage|The title of the page ord@@o1">Order</div>
+    <form [formGroup]="orderForm" novalidate>
+      <div class="form-container">
+  <mat-form-field>
+    <input id="customer"
+           matInput
+           style="color: black"
+           formControlName="customer"
+           [(ngModel)]="customerName"
+           placeholder="Customer" i18n="Username|The username of the person that's logged in ord@@o2">
+    <span *ngIf="!orderForm.get('customer').valid && orderForm.get('customer').touched" class="help-block" style="color: black">Please enter a customer</span>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+           id="fname"
+           matInput
+           style="color: black"
+           formControlName="fname"
+           placeholder="First Name" i18n="FirstName|The first name of the person that's logged in ord@@o3">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+           id="lname"
+           matInput
+           style="color: black"
+           formControlName="lname"
+           placeholder="Last Name" i18n="LastName|The last name of the person that's logged in ord@@o4">
+  </mat-form-field>
+  <mat-form-field>
+    <input id="years"
+           matInput
+           style="color: black"
+           formControlName="years"
+           placeholder="Years" i18n="Age| The age of the person that's logged in ord@@o5">
+  </mat-form-field>
+  <mat-form-field>
+  <mat-select placeholder="Gender">
+    <mat-option value="option" i18n="Female| The gender of the person that's logged in ord@@o7">Female</mat-option>
+    <mat-option value="option" i18n="Male| The gender of the person that's logged in ord@@o8">Male</mat-option>
+  </mat-select>
+</mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Payment Option" i18n="Payment|The method of the payment ord@@o9">
+      <mat-option value="option">VISA</mat-option>
+      <mat-option value="option">MasterCard</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button
+    class="btn btn-primary"
+    (click)="onCheckOut()"
+    i18n="The submitting button| The button that places the order ord@@o10">Submit Order!</button>
+</div>
+

@@ -1,0 +1,26 @@
+<body>
+<div>
+  <div class="medium-list">
+    <div class="list-viewer-wrapper">
+  <ng-container>
+    <h3 id="title" style="color: black" i18n="Product Name|The name of the product detail prod@@dp1"> Product: {{dataFromBackend.name}}</h3>
+  <h3 id="productName" style="color: black" i18n="ProductName|Name of the product prod@@dp2"> Name: {{dataFromBackend.name}}</h3>
+  <h3 id="productCategory" style="color: black" i18n="ProductCategory|Category of the product prod@@dp3"> Category: {{dataFromBackend.category}} RON</h3>
+  <h3 id="productPrice"style="color: black" i18n="ProductPrice|The price of the product prod@@dp4">Price: {{dataFromBackend.price}}</h3>
+  <h3 id="productDescription" style="color: black" i18n="ProdcutDescription|The description of the prod@@dp5">Description: {{dataFromBackend.description}}</h3>
+
+    <div >
+      <mat-chip color="accent" selected style="font-size: 30px; position: center" (click)="onCreate()" i18n="Add button|Adding a new product prod@@dp6">ADD</mat-chip>
+      <mat-chip color="primary" selected style="font-size: 30px; position: center" (click)="onEdit()" i18n="Edit button|Making editation of one product prod@@dp7">EDIT</mat-chip>
+        <mat-chip color="accent" selected style="font-size: 30px; position: center" (click)="deleteProduct(dataFromBackend.id)" i18n="Delete button|Deleting a product from the online shop prod@@dp8">DELETE</mat-chip>
+<div>
+  <img src="{{dataFromBackend.image}} "/>
+</div>
+    </div>
+  </ng-container>
+
+</div>
+  </div>
+</div>
+
+</body>

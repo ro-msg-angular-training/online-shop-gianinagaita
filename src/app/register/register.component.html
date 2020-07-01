@@ -1,0 +1,45 @@
+<div class="medium-list">
+  <div class="list-viewer-wrapper">
+    <div class="list-header-title" i18n>Register</div>
+    <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
+      <div class="form-container">
+        <mat-form-field>
+          <input id="name"
+                 matInput
+                 style="color: black"
+                 formControlName="name"
+                 [(ngModel)]="user.name"
+                 placeholder="Enter your name" i18n="First Name| The first name of the customer cust@@c1">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="email"
+                 matInput
+                 style="color: black"
+                 formControlName="email"
+                 [(ngModel)]="user.email"
+                 placeholder="Enter your email" i18n="Email| The email of the customer cust@@c2">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="password"
+                 matInput
+                 style="color: black"
+                 formControlName="password"
+                 [(ngModel)]="user.password"
+                 placeholder="Enter your password"
+                 style="color: black"
+                 [type]="hide ? 'password' : 'text'"/>
+          <mat-icon matSuffix (click)="hide = !hide" style="color: black" i18n="Password| The password of the customer cust@@c3">
+            {{hide ? 'visibility' : 'visibility_off'}}
+          </mat-icon>
+        </mat-form-field>
+        <h3>
+          <button mat-button type="submit"
+                  class="mat-raised-button mat-primary"
+                  [disabled]="!registerForm.valid" i18n="Button Registration| The button that makes the registration of the customer cust@@c4">Register
+          </button>
+          <button mat-button routerLink="/login" class="mat-raised-button mat-primary" i18n="Login| The button that logged the customer cust@@c5">Login</button>
+        </h3>
+      </div>
+    </form>
+  </div>
+</div>

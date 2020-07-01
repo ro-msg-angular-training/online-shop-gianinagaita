@@ -1,0 +1,48 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+  color: #F0FFFF;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+h3{
+  color: blue;
+}
+main {
+  padding: 10px;
+}
+mat-toolbar-row, mat-toolbar, mat-button, mat-button-wrapper, menu-spacer {
+  color: #F0FFFF;
+}
+.material {
+  color: blue;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 5px;
+}
+.second-material {
+  color: blue;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 100px;
+}
+
+.third-material {
+  color: blue;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 200px;
+}

@@ -1,0 +1,43 @@
+table {
+  width: 60%;
+}
+body{
+  color: #8c7373;
+}
+h3{
+  color: blue;
+}
+
+h1 {
+  color: #8c7373;
+}
+mat-chip {
+  max-width: 200px;
+}
+.material-icons {
+  background-color: #000000;
+  color: #FFFFFF;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 5px;
+
+
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+.position-shopping-cart{
+  color: blue;
+  position: absolute;
+  right: 5px;
+}

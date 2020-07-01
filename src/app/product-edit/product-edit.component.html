@@ -1,0 +1,26 @@
+<div class="medium-list">
+  <div class="list-viewer-wrapper">
+    <div class="list-header-title" i18n="Edit Page|The page where you can edit the product prod@@ed1">Product Edite</div>
+    <form (ngSubmit)="updateData()">
+      <div class="form-container">
+        <mat-form-field class="form-group">
+          <input type="text" class="form-control; input-wh" name="name" [(ngModel)]="productData.name">
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input type="text" class="form-control; input-wh" name="category" [(ngModel)]="productData.category">
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input type="text" class="form-control; input-wh" name="price" [(ngModel)]="productData.price">
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input type="text" class="form-control; input-wh" name="description" [(ngModel)]="productData.description">
+        </mat-form-field>
+
+        <button  mat-flat-button style="position: center;background: royalblue" i18n="The update button|The button that made the update of the product prod@@ed2"> Update Product!</button>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+

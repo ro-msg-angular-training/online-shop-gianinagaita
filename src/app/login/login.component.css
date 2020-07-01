@@ -1,0 +1,23 @@
+
+.materialbuttonregistration {
+  color: blue;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 1500px;
+
+}
+.materialsecondbuttonregistration {
+  color: blue;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  right: 1600px;
+
+}
